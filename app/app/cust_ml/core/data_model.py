@@ -71,7 +71,7 @@ class AndCustData(BaseModel):
                                                                             '65:律师;66:军人;67:金融机构;68:餐饮;69:其他;')
     re_24h_apply_num: int = Field(default=None, title='近24小时申请次数', example=0, description='0,1,2,3 ...')
     re_7d_apply_num: int = Field(default=0, title='近7天申请次数', example=0, description='0,1,2,3 ...')
-    db_name: int = Field(default=None, title='库名', example=5, description='1表示jf09，2表示jf10，3表示jf15，4表示jf29，5表示jf40')
+    db_name: int = Field(default=None, title='库名', example=5, description='1表示jf09，2表示jf10，3表示jf15，4表示jf29，5表示jf40, 0表示其他')
     is_daichao: int = Field(default=None, title='是否贷超', example=1, description='1表示贷超，0表示非贷超')
     RAM: str = Field(default=None, title='RAM', example='564 MB/2.77 GB')
     date_of_birth: str = Field(default=None, title='出生日期', example='2002-01-06',
