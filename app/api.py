@@ -10,7 +10,7 @@ from .routers import risk_router_init
 from fastapi import FastAPI
 
 description = """
-* IOS/Android客户评分越高风险越低,评分范围:\t550~850, <br> **-9999**:\t表示无法评分或程序BUG
+* IOS/Android客户评分越高风险越低,评分范围:\t450~800, <br> **-9999**:\t表示无法评分或程序BUG
 * IOS模型入参详情:\t**IosCustData**
 * Android模型入参详情:\t**AndCustData**
 """
