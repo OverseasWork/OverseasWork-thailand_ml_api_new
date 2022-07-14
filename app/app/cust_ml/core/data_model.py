@@ -46,7 +46,7 @@ class IosCustData(BaseModel):
     mobile_brand: str = Field(default=None, title='手机品牌', example='iPhone')
     mobile_model: str = Field(default=None, title='手机型号', example='iPhone 12 Pro')
     RAM: str = Field(default=None, title='RAM', example='564 MB/2.77 GB')
-    db_name: int = Field(default=None, title='库名', example=5, description='4表示jf29，5表示jf40')
+    db_name: int = Field(default=None, title='库名', example=5, description='4表示jf29,5表示jf40,0表示其他')
 
 
 class AndCustData(BaseModel):
