@@ -1,8 +1,8 @@
-婚姻
-教育程度
-用户类型
-行业
-职位
+marriage
+education
+customer_type
+industry
+work_type
 db_name
 is_daichao
 mobile_brand
