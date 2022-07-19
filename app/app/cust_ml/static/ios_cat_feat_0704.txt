@@ -1,9 +1,9 @@
-住房类型
-婚姻
-性别
-收入
-教育程度
-用户类型
-职位
-行业
+housing_type
+marriage
+gender
+income
+education
+customer_type
+work_type
+industry
 db_name
