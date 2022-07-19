@@ -15,7 +15,7 @@ IosFeatMap = {
     'income': '收入',
     'education': '教育程度',
     'customer_type': '用户类型',
-    'emergency_contact_cor_customer_num': '紧急联系人关联用户数量',
+    'emergency_contact_cor_customer_num': '紧急联系人关联还款用户数量',
     'work_type': '职位',
     'industry': '行业',
     'device_cor_name_num': '设备关联姓名数量',
