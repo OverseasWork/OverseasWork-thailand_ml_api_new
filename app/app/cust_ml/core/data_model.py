@@ -25,7 +25,7 @@ class IosCustData(BaseModel):
                            description='1:小学、2:初中、3:高中 4:大专、 5:本科、6:其他')
     customer_type: int = Field(default=None, title='用户类型', example=2,
                            description='1： 私营业主、 2：上班族、 3：自由职业（摩的司机/农民/渔夫等、）4：退休/待业/无业/家庭主妇')
-    emergency_contact_cor_customer_num: int = Field(default=None, title='紧急联系人关联用户数量', example=0,
+    emergency_contact_cor_customer_num: int = Field(default=None, title='紧急联系人关联还款用户数量', example=0,
                                                     description='0,1,2,3 ...')
     work_type: int = Field(default=None, title='职位', example=1,
                            description='1:正式员工(2年以下); 2:正式员工(2年以上); 3:经理; 4:高管; 5:外包; 6:临时合同工')
@@ -61,7 +61,7 @@ class AndCustData(BaseModel):
                            description='1:小学、2:初中、3:高中 4:大专、 5:本科、6:其他')
     customer_type: int = Field(default=None, title='用户类型', example=2,
                                description='1： 私营业主、 2：上班族、 3：自由职业（摩的司机/农民/渔夫等、）4：退休/待业/无业/家庭主妇')
-    emergency_contact_cor_customer_num: int = Field(default=None, title='紧急联系人关联用户数量', example=0,
+    emergency_contact_cor_customer_num: int = Field(default=None, title='紧急联系人关联还款用户数量', example=0,
                                                     description='0,1,2,3 ...')
     work_type: int = Field(default=None, title='职位', example=1,
                            description='1:正式员工(2年以下); 2:正式员工(2年以上); 3:经理; 4:高管; 5:外包; 6:临时合同工')
