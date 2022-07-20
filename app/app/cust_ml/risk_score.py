@@ -47,6 +47,7 @@ def ios_risk_score(data: dict):
         data['age'] = data.apply(
             lambda x: -9999 if 2022 - int(x['date_of_birth'][:4]) < 0 or 2022 - int(x['date_of_birth'][:4]) >= 100 else 2022 - int(
                 x['date_of_birth'][:4]), axis=1)
+        data['mobile_brand'] = data['mobile_brand'].filena('nan')
         data['mobile_brand'] = data.apply(
             lambda x: mobile_brand_map.get('-'.join([str(x['mobile_brand']).lower(), str(x['mobile_model']).lower()]), -999), axis=1)
         data.replace('NO_HIT', 0, inplace=True)
@@ -105,6 +106,7 @@ def and_risk_score(data: dict):
         data['age'] = data.apply(
             lambda x: -9999 if 2022 - int(x['date_of_birth'][:4]) < 0 or 2022 - int(x['date_of_birth'][:4]) >= 100 else 2022 - int(
                 x['date_of_birth'][:4]), axis=1)
+        data['mobile_brand'] = data['mobile_brand'].filena('nan')
         data['mobile_brand'] = data.apply(
             lambda x: mobile_brand_map.get('-'.join([str(x['mobile_brand']).lower(), str(x['mobile_model']).lower()]), -999), axis=1)
         data.replace('NO_HIT', 0, inplace=True)
