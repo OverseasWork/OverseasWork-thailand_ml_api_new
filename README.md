@@ -14,3 +14,6 @@ nginx 监听 master:9005，分布转发 master:8004，node:8004
 
 ### 接口文档说明
 http://0.0.0.0:9005/docs
+
+### BaseUrl
+http://0.0.0.0:9005/
