@@ -10,7 +10,7 @@ source start.sh </n>
 
 ### step3
 ### Nginx负载均衡
-nginx 监听 master:8115，分布转发 master:8114，node:8114
+nginx 监听 master:9005，分布转发 master:8004，node:8004
 
 ### 接口文档说明
-http://0.0.0.0:8115/docs
+http://0.0.0.0:9005/docs
