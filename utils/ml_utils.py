@@ -20,11 +20,11 @@ def cal_ram_rom(df):
     try:
         for i in str(df.RAM).split('/'):
             if i.endswith('MB'):
-                ram_rom.append(float(i.replace('MB', '')) / 1024)
+                ram_rom = [float(i.replace('MB', '')) / 1024,0]
             elif i.endswith('GB'):
-                ram_rom.append(float(i.replace('GB', '')))
+                ram_rom = [float(i.replace('GB', '')),0]
             else:
-                ram_rom.extend([float(i), -999])
+                ram_rom = [float(i), -999]
         return ram_rom
     except Exception as e:
         return [0, 0]
